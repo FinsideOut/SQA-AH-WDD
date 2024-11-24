@@ -1,0 +1,130 @@
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* PAGE LAYOUT */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header,
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    padding: 20px;
+}
+
+header ul,
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+header ul li,
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header ul li a,
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* MAIN */
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.tile {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e9e9e9;
+    border-radius: 8px;
+}
+
+.tile a {
+    color: #0099ff;
+    display: block;
+}
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    color: #333;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+footer h3 {
+    margin-top: 20px;
+}
+
+/* -----------------------DISPLAY FLEX----------------------------- */
+/* Here is an example of display:flex */
+/* This is the kind of thing that is not in AH course... */
+/* but you can get marks for researching and learning new code in the project */
+header,
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ------------------TABLE STYLING--------------------------------------- */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 8px 12px;
+    border: 1px solid #0099ff;
+    text-align: right;
+}
+
+.styled-table th {
+    background-color: #004488;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.styled-table .main-headings th {
+    background-color: #004488;
+    color: #ccffff;
+    font-weight: bold;
+}
+
+.styled-table .sub-headings th,
+tfoot tr td {
+    background-color: #ccffff;
+    color: #004488;
+    font-weight: bold;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+    <title>Media Queiries</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mr W's Advanced WDD Demos</h1>
+        <ul>
+            <li><a href="">A Linkk</a></li>
+            <li><a href="">A Link</a></li>
+            <li><a href="">A Link</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="tile">
+            <h2>Tables in HTML</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus inventore porro reiciendis eum
+                deleniti recusandae qui nobis expedita amet animi.</p>
+            <a href="https://www.w3schools.com/css/css3_flexbox.asp">Learn More</a>
+        </div>
+        <div class="tile">
+            <!-- NO CSS TABLE EXAMPLE -->
+            <h2>Unstyled Table Example</h2>
+            <p>The table has below no CSS to style it whatsoever.</p>
+            <table>
+                <!-- tr stands for "Table Row" -->
+                <!-- The first row of our table is used for headings, or "Table Headings" -->
+                <tr>
+                    <th>Forename</th>
+                    <th>Surname</th>
+                    <th>Favourite Colour</th>
+                </tr>
+                <!-- each other table row is filled with "table data" -->
+                <tr>
+                    <td>Mrs</td>
+                    <td>Camplbell</td>
+                    <td>Red</td>
+                </tr>
+                <tr>
+                    <td>Mr</td>
+                    <td>Kennedy</td>
+                    <td>Green</td>
+                </tr>
+                <tr>
+                    <td>Mr</td>
+                    <td>Williamson</td>
+                    <td>Blue</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="tile">
+            <h2>Styled Table Example</h2>
+            <p>Here we have given the table a class, and used descendant selectors in CSS to stlye the table.</p>
+            <table class="styled-table">
+                <tr>
+                    <th>Forename</th>
+                    <th>Surname</th>
+                    <th>Favourite Colour</th>
+                </tr>
+                <tr>
+                    <td>Mrs</td>
+                    <td>Camplbell</td>
+                    <td>Red</td>
+                </tr>
+                <tr>
+                    <td>Mr</td>
+                    <td>Kennedy</td>
+                    <td>Green</td>
+                </tr>
+                <tr>
+                    <td>Mr</td>
+                    <td>Williamson</td>
+                    <td>Blue</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="tile">
+            <h2>Table Wrappers Example</h2>
+            <p>Here we have given the table a class, and used descendant selectors in CSS to stlye the table.</p>
+            <table class="styled-table">
+                <thead>
+                    <tr class="main-headings">
+                        <th colspan=2>Name</th>
+                        <th colspan=2>Details</th>
+                    </tr>
+                    <tr class="sub-headings">
+                        <th>Forename</th>
+                        <th>Surname</th>
+                        <th>Favourite Colour</th>
+                        <th>Lucky Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mrs</td>
+                        <td>Camplbell</td>
+                        <td>Red</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Mr</td>
+                        <td>Kennedy</td>
+                        <td>Green</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Mr</td>
+                        <td>Williamson</td>
+                        <td>Blue</td>
+                        <td>32</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Average Lucky Nymber</td>
+                        <td>maths is hard</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </div>
+
+        <div class="tile">
+            <h2>Learn more about display:flex</h2>
+            <p>
+                The header uses display:flex to dynamically position content. It does a similar thing to float:left and
+                float:right, but is far easier and less archaic. This is the kind of thing you can get extra marks for
+                in your project...
+            </p>
+            <a href="https://www.w3schools.com/css/css3_flexbox.asp">Learn more</a>
+            <br>
+            <h3>What do you mean, extra marks!?!?!</h3>
+            <p>In your project, 4 marks are available for implementing code that is not in the AH course. This will
+                require your own research to decide what is most appropriate. Flexbox or CSS Grids are a good jumping
+                off point</p>
+        </div>
+        <section>
+            <h2>Your Tasks</h2>
+            <div class="tile">
+                <h3>Exercise 1</h3>
+                <p>In the space provided below, use HTML and CSS to re-create the table seen in this screenshot:</p>
+                <img src="ex1table.png" alt="oops, image not found :(">
+                <div class="student-answers">
+                    <h4>Your code goes here...</h4>
+                    <!-- START YOUR HERE -->
+                    <!-- END OF YOUR CODE HERE -->
+                </div>
+            </div>
+            <div class="tile">
+                <h3>Exercise 2</h3>
+                <p>In the space provided below, use HTML and CSS to re-create the table seen in this screenshot:</p>
+                <img src="ex1table.png" alt="oops, image not found :(">
+                <div class="student-answers">
+                    <h4>Your code goes here...</h4>
+                    <!-- START YOUR HERE -->
+                    <!-- END OF YOUR CODE HERE -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>Some Stuff will go here</h3>
+        <ul>
+            <li><a href="">A Link</a></li>
+            <li><a href="">A Link</a></li>
+            <li><a href="">A Link</a></li>
+        </ul>
+    </footer>
+
+
+
+</body>
+
+</html>
