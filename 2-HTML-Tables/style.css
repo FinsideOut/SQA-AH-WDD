@@ -1,0 +1,32 @@
+/* ------------------TABLE STYLING--------------------------------------- */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 8px 12px;
+    border: 1px solid #0099ff;
+    text-align: right;
+}
+
+.styled-table th {
+    background-color: #004488;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.styled-table .main-headings th {
+    background-color: #004488;
+    color: #ccffff;
+    font-weight: bold;
+}
+
+.styled-table .sub-headings th,
+tfoot tr td {
+    background-color: #ccffff;
+    color: #004488;
+    font-weight: bold;
+}

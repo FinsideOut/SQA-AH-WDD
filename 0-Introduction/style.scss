@@ -171,6 +171,7 @@ main {
     background-color: $tile-bg;
 
     h2,
+    h3,
     p {
         margin-bottom: $spacing-medium;
     }
@@ -186,6 +187,10 @@ main {
     }
 
     h3 {
+        font-size: $text-m;
+    }
+
+    .code-prompt {
         text-align: center;
     }
 

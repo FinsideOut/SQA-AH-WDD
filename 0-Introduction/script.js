@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".main-heading").forEach((element) => {
         element.addEventListener("click", () => {
             console.log("Clicked");
-            window.location.href = "index.html";
+            window.location.href = "/0-Introduction/index.html";
         });
     });
 
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // empty or placeholder
             if (!href || href === "#") {
                 event.preventDefault();
-                window.location.href = "error-page.html";
+                window.location.href = "/0-Introduction/error-page.html";
                 return;
             }
 
@@ -30,12 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     } else {
                         // error 404
                         event.preventDefault();
-                        window.location.href = "error-page.html";
+                        window.location.href = "/0-Introduction/error-page.html";
                     }
                 })
                 .catch(() => {
                     event.preventDefault();
-                    window.location.href = "error-page.html";
+                    window.location.href = "/0-Introduction/error-page.html";
                 });
         });
     });

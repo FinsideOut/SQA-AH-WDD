@@ -124,6 +124,7 @@ main {
   background-color: rgba(0, 0, 0, 0.6);
 }
 .tile h2,
+.tile h3,
 .tile p {
   margin-bottom: 20px;
 }
@@ -136,6 +137,9 @@ main {
   font-size: 20px;
 }
 .tile h3 {
+  font-size: 20px;
+}
+.tile .code-prompt {
   text-align: center;
 }
 .tile hr {
