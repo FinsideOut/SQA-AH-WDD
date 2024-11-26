@@ -11,6 +11,9 @@ $theme-text-light: rgb(255, 255, 255);
 $theme-tb-light: rgb(255, 255, 255);
 
 $tile-bg: rgba(0, 0, 0, 0.6);
+
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 $text-xxl: 50px;
 $text-xl: 40px;
 $text-l: 30px;
@@ -27,24 +30,37 @@ $text-xs: 50px;
 }
 
 body {
-    background: linear-gradient(225deg, lighten($theme-pale-2, 25%), $theme-pale-2, lighten($theme-pale-2, 30%))
+    background: linear-gradient(225deg, lighten($theme-pale-2, 25%), $theme-pale-2, lighten($theme-pale-2, 30%));
+    color: $theme-text-light;
 }
 
-h1,
-h2,
-h3,
+
+
 p,
 a {
-    color: $theme-text-light;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
 }
 
 a {
     font-size: $text-m;
     text-decoration: none;
+    color: $theme-text-light;
 
     &:hover {
         color: $theme-pale-2;
     }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+
 }
 
 nav {
