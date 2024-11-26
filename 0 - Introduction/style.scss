@@ -14,6 +14,7 @@ $tile-bg: rgba(0, 0, 0, 0.6);
 
 // google fonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 $text-xxl: 50px;
 $text-xl: 40px;
 $text-l: 30px;
@@ -94,13 +95,14 @@ header {
         h1 {
             font-size: $text-xxl;
             margin-bottom: $spacing-large;
+            display: inline-block;
+
+            &:hover {
+                cursor: pointer;
+                color: $theme-pale-2;
+            }
         }
     }
-
-
-
-
-
 }
 
 
@@ -108,7 +110,6 @@ header {
 footer {
     padding: $spacing-large;
     background-color: $theme-pale-1;
-
     display: flex;
     flex-direction: column;
 
@@ -149,8 +150,6 @@ footer {
         h2 {
             margin-bottom: $spacing-small;
         }
-
-
 
         a,
         p {
