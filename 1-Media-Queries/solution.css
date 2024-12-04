@@ -1,0 +1,28 @@
+@media screen and (max-width:500px) {
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-align: center;
+    }
+
+    footer .row .image-container {
+        display: none;
+    }
+
+    .tiny-text p,
+    .tiny-text h2 {
+        font-size: 2px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    p {
+        font-size: 50px;
+
+    }
+}

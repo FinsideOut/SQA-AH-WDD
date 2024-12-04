@@ -12,105 +12,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/0-Introduction/style.css">
+    <link rel="icon" href="../0-Introduction/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../0-Introduction/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="../0-Introduction/favicon_io/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="../0-Introduction/favicon_io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="../0-Introduction/style.css">
+    <!-- EXAMPLE QUERIES HERE -->
+    <link rel="stylesheet" href="examples.css">
+    <link rel="stylesheet" href="task.css">
+    <!-- <link rel="stylesheet" href="solution.css"> -->
     <title>&#10024;Mr W's AH WDD&#10024;</title>
 </head>
 
 <body>
+
     <header>
-        <div class="image-container">
-            <img src="/0-Introduction/logo.png" alt="">
+        <div class="image-container no-print">
+            <img src="../0-Introduction/logo.png" alt="">
         </div>
         <div class="main-nav">
-            <h1 class="main-heading">Mr W's Advanced WDD Demos</h1>
+            <h1 class="main-heading">Advanced Higher WDD</h1>
             <nav>
                 <ul>
-                    <li><a href="/1-Media-Queries/media-queries.html">Media Queries</a></li>
-                    <li><a href="/2-HTML-Tables/html-tables.html">Tables</a></li>
-                    <li><a href="/3-Intro-to-PHP/intro-to-php.php">PHP</a></li>
-                    <li><a href="/4-HTML-Forms/html-forms.php">Forms</a></li>
-                    <li><a href="/5-Connecting-a-Database/connecting-to-a-database.php">
+                    <li><a href="../1-Media-Queries/media-queries.html" class="current-page">Media Queries</a></li>
+                    <li><a href="../2-HTML-Tables/html-tables.html">Tables</a></li>
+                    <li><a href="../3-Intro-to-PHP/intro-to-php.php">PHP</a></li>
+                    <li><a href="../4-HTML-Forms/html-forms.php">Forms</a></li>
+                    <li><a href="../5-Connecting-a-Database/connecting-to-a-database.php">
                             Databases</a>
                     </li>
-                    <li><a href="/6-Session-Variables/session-variables.php">Session Variables</a></li>
-                    <li><a href="/7-Example-Project/example-project.php">Example Project</a></li>
+                    <li><a href="../6-Session-Variables/session-variables.php">Session Variables</a></li>
+                    <li><a href="../7-Example-Project/example-project.php">Example Project</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
     <main>
+        <!-- NOTES -->
         <div class="tile">
-            <h2>What are Media Queries?</h2>
-            <p>Media queries in CSS are a powerful tool that allow you to apply different styles to a webpage based on
-                the
-                characteristics of the device or viewport displaying the content. They enable responsive design by
-                targeting
-                specific conditions like screen width, height, resolution, or orientation. For example, you can use
-                media
-                queries to adjust the layout of a website for mobile, tablet, and desktop devices, ensuring an optimal
-                viewing
-                experience across a range of screen sizes and devices.</p>
-            <a href="https://www.w3schools.com/css/css3_flexbox.asp">Learn More</a>
+            <h2>&#9999;&#65039; What are Media Queries?</h2>
+            <p>We can use media queires to apply different styles to our website, depending on how the website is being
+                viewed. For example, if our website is being viewed on mobile, we might want to make all of the margins
+                and padding smaller, hide our navigation completely behind a burger icon. This is called <b>responsive
+                    design</b>
+            </p>
+            <div class="image-container">
+                <img src="responsive-design.webp" alt="">
+                <p>Mobile first design is common in modern web dev, websites are most commonly viewed on mobile devices
+                </p>
+            </div>
+            <p>Most often, we care about the screen width in pixels. For example, the media query below asks the browser
+                <i>"How wide are you right now?"</i>, and will only make the h1s
+                green if the screen width is <i>under</i> 1000 pixels
+            </p>
+            <div class="image-container">
+                <img src="example1.png" alt="">
+                <p>This is media query turns the h1s on this page green when the screen width is below 1000 pixels</p>
+            </div>
+            <hr>
+            <div class="tile-links">
+                <a href="hhttps://www.w3schools.com/cssref/atrule_media.php" target="_blank">W3 Schools</a>
+                <a href="https://www.youtube.com/watch?v=yU7jJ3NbPdA&ab_channel=WebDevSimplified"
+                    target="_blank">Youtube</a>
+            </div>
+
         </div>
 
-
+        <!-- CODE EXAMPLES -->
         <div class="tile">
-            <h2>How Do They Work?</h2>
-            <p>Media queries work by applying conditional logic to CSS rules, allowing styles to be tailored based on
-                the
-                device's characteristics. A media query consists of a "media type" (like screen or print) and an
-                optional
-                "media
-                feature" (like width, height, or orientation). When the conditions specified in the media query are met,
-                the
-                associated styles are applied. For example, a media query might check if the viewport width is smaller
-                than
-                600px and, if true, adjust the layout to stack elements vertically for better readability on mobile
-                devices.
-                This flexibility helps create responsive designs that adapt to different screen sizes and user contexts.
+            <h2>&#x1F440; Try them out!</h2>
+            <!-- In the head you will see a link to "examples.css", have a look at that file -->
+            <p>Take a look at the code for this section.
             </p>
+            <p>You can see the effect of these media queries by right clicking on the page and clicking "inspect". This
+                brings up the dev tools. At the top you should see the current dimensions of the page</p>
+            <div class="image-container">
+                <!-- notice that we have given the image a special class, "no-mobile" -->
+                <!-- this is because we are going to hide the image when the screen width becomes too small -->
+                <img class="no-mobile" src="dimensions.png" alt="">
+                <p>You can change the dimensions of the viewport by dragging the sides</p>
+            </div>
+            <p>Can you find the code that makes the image above disappear when the screen width is below 500 pixels?</p>
+            <p>Can you find the code from the main css file, "../0-Introduction/style.css", that is used to change the
+                head and footer of these web pages?</p>
         </div>
+
+        <!-- IMPORTANT STUFF -->
         <div class="tile">
-            <h2>Learn more about display:flex</h2>
-            <p>
-                The header uses display:flex to dynamically position content. It does a similar thing to float:left and
-                float:right, but is far easier and less archaic. This is the kind of thing you can get extra marks for
-                in your project...
-            </p>
-            <a href="https://www.w3schools.com/css/css3_flexbox.asp">Learn more</a>
-            <br>
-            <h3>What do you mean, extra marks!?!?!</h3>
-            <p>In your project, 4 marks are available for implementing code that is not in the AH course. This will
-                require your own research to decide what is most appropriate. Flexbox or CSS Grids are a good jumping
-                off point</p>
+            <h2>&#10071; Be reasonable &#10071;</h2>
+            <p>Responsive design is one of the most time consuming parts of web dev.</p>
+            <p>For your project, you <b><u>must</u></b> include media queries, but you only need to design for two
+                screen widths.</p>
+            <p>i.e. design your project on desktop, and then produce a single query that changes many styles when the
+                width is below a certain width</p>
+            <div class="image-container">
+                <img src="design-example.png" alt="">
+                <p>This table is taken directly from an SQA example project</p>
+            </div>
+        </div>
+
+        <!-- YOUR TASKS -->
+        <div class="tile tiny-text">
+            <!-- Notice the weird extra class on this tile???? -->
+            <h2>&#10067;Task</h2>
+            <p>Use the "task.css" file to write a media query that applies the following when the screen size is
+                <b>below 500 pixels</b></p>
+            <ol>
+                <li>
+                    <p>Makes all of the text on the page center aligned (using grouped selectors)</p>
+                </li>
+                <li>
+                    <p>Hides the school logo in the footer (using <b>fully</b> descendant selectors)</p>
+                    <!-- hints on how to select in the footer -->
+                </li>
+                <li>
+                    <p>Changes the font size of <b>just this tile</b> to 2 px</p>
+                    <!-- remember that weird extra class? -->
+                </li>
+            </ol>
+            <p>Take a screenshot of the result and include it in the image container below</p>
+            <div class="image-conatiner">
+                <!-- make sure to save the screenshot in the same folder as this html -->
+                <img src="" alt="Your Screenshot Here">
+            </div>
         </div>
     </main>
 
-
     <footer>
         <div class="row">
+            <!-- to address this image with descendant selectors..
+             footer .row .image-container {
+             } 
+             -->
             <div class="image-container">
-                <img src="/0-Introduction/logo.png" alt="">
+                <img src="../0-Introduction/logo.png" alt="">
             </div>
             <nav>
                 <ul>
-                    <li><a href="/1-Media-Queries/media-queries.html">1 - Media Queries</a></li>
-                    <li><a href="/2-HTML-Tables/html-tables.html">2 - HTML Tables</a></li>
-                    <li><a href="/3-Intro-to-PHP/intro-to-php.php">3 - Intro To PHP</a></li>
-                    <li><a href="/4-HTML-Forms/html-forms.php">4 - HTML Forms</a></li>
-                    <li><a href="/5-Connecting-a-Database/connecting-to-a-database.php">5 - Connecting To A
+                    <li><a href="../1-Media-Queries/media-queries.html">1 - Media Queries</a></li>
+                    <li><a href="../2-HTML-Tables/html-tables.html">2 - HTML Tables</a></li>
+                    <li><a href="../3-Intro-to-PHP/intro-to-php.php">3 - Intro To PHP</a></li>
+                    <li><a href="../4-HTML-Forms/html-forms.php">4 - HTML Forms</a></li>
+                    <li><a href="../5-Connecting-a-Database/connecting-to-a-database.php">5 - Connecting To A
                             Database</a>
                     </li>
-                    <li><a href="/6-Session-Variables/session-variables.php">6 - Session Variables</a></li>
-                    <li><a href="/7-Example-Project/example-project.php">7 - Example Project</a></li>
+                    <li><a href="../6-Session-Variables/session-variables.php">6 - Session Variables</a></li>
+                    <li><a href="../7-Example-Project/example-project.php">7 - Example Project</a></li>
                 </ul>
             </nav>
         </div>
 
         <div class="author-details">
             <h2>Mr W's Advanced WDD Demos</h2>
-            <a href=""> &#10071; A note for teachers &#10071;</a>
+            <a class="no-print" href=""> &#10071; A note for teachers &#10071;</a>
             <p>Made with &#10084;&#65039; by Mr Williamson, for <a href="https://linlithgowacademy.westlothian.org.uk/"
                     target="_blank">Linlithgow Academy</a></p>
             <p>Contect the author: <a href="mailto:wlfinlay.williamson@glow.sch.uk">wlfinlay.williamson@glow.sch.uk</a>
@@ -120,7 +175,9 @@
     </footer>
 
     <!-- navigation scripting -->
-    <script src="/0-Introduction/script.js"></script>
+    <script src="../0-Introduction/script.js"></script>
+
+
 </body>
 
 </html>

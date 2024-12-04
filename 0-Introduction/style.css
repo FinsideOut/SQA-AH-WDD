@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(225deg, #fffd80, rgb(255, 250, 0), #fffd99);
+  background: linear-gradient(225deg, #fffd99, rgb(255, 250, 0), #fffecc);
   color: rgb(255, 255, 255);
 }
 
@@ -23,6 +23,11 @@ a {
 }
 a:hover {
   color: rgb(255, 250, 0);
+}
+
+.current-page {
+  color: rgb(255, 250, 0);
+  cursor: default;
 }
 
 h1,
@@ -47,10 +52,11 @@ nav ul a {
 
 header {
   padding: 30px;
-  background-color: rgb(0, 200, 255);
+  background: linear-gradient(#005066, rgb(0, 200, 255));
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 100%;
 }
 header .image-container {
   max-width: 200px;
@@ -60,6 +66,7 @@ header .main-nav {
   width: 100%;
 }
 header .main-nav h1 {
+  width: 100%;
   font-size: 50px;
   margin-bottom: 30px;
   display: inline-block;
@@ -71,7 +78,7 @@ header .main-nav h1:hover {
 
 footer {
   padding: 30px;
-  background-color: rgb(0, 200, 255);
+  background: linear-gradient(rgb(0, 200, 255), #002833);
   display: flex;
   flex-direction: column;
 }
@@ -128,14 +135,11 @@ main {
 .tile p {
   margin-bottom: 20px;
 }
-.tile h2,
-.tile a {
+.tile h2 {
   font-size: 30px;
 }
 .tile p,
-.tile a {
-  font-size: 20px;
-}
+.tile a,
 .tile h3 {
   font-size: 20px;
 }
@@ -155,4 +159,61 @@ main {
 }
 .tile .tile-links a:hover {
   color: #00a0cc;
+}
+.tile .comment {
+  color: green;
+  background-color: #222;
+}
+.tile .image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 20px auto;
+}
+.tile .image-container img {
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+}
+.tile .image-container p,
+.tile .image-container a {
+  font-size: 10px;
+  width: 50%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+@media print {
+  header nav ul {
+    flex-direction: column;
+  }
+  .no-print {
+    display: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  header .image-container {
+    display: none;
+  }
+  header h1,
+  header nav ul li {
+    text-align: right;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav .hidden {
+    display: block;
+  }
+}
+@media screen and (max-width: 700px) {
+  main {
+    width: 100%;
+  }
+  .tile {
+    margin: 10px;
+  }
+  .tile p {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

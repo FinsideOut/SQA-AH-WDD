@@ -1,0 +1,24 @@
+/* turns h1s green when the width is < 1000 */
+@media screen and (max-width :1000px) {
+    h1 {
+        color: green;
+    }
+}
+
+/* when width < 600, turn p pink and a orange */
+@media screen and (max-width :600px) {
+    p {
+        color: pink;
+    }
+
+    a {
+        color: orange;
+    }
+}
+
+/* hides things completely when screen is very small */
+@media screen and (max-width:500px) {
+    .no-mobile {
+        display: none;
+    }
+}

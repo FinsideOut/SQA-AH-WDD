@@ -1,8 +1,10 @@
-/* ------------------TABLE STYLING--------------------------------------- */
+/* Examples one and two */
 .styled-table {
     width: 100%;
+    /* border collapse is the only new property for you here */
+    /* try commenting it out to see what it does */
     border-collapse: collapse;
-    margin-top: 20px;
+    margin: 20px auto;
 }
 
 .styled-table th,
@@ -18,6 +20,8 @@
     font-weight: bold;
 }
 
+
+/* only for example three */
 .styled-table .main-headings th {
     background-color: #004488;
     color: #ccffff;

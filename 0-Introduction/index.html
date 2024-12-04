@@ -12,28 +12,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>&#10024;Mr W's AH WDD&#10024;</title>
+    <link rel="icon" href="../0-Introduction/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../0-Introduction/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="../0-Introduction/favicon_io/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="../0-Introduction/favicon_io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="../0-Introduction/style.css">
+    <title>WDD Demos</title>
 </head>
 
 <body>
     <header>
-        <div class="image-container">
-            <img src="logo.png" alt="">
+        <div class="image-container no-print">
+            <img src="../0-Introduction/logo.png" alt="">
         </div>
         <div class="main-nav">
-            <h1 class="main-heading">Mr W's Advanced WDD Demos</h1>
+            <h1 class="main-heading">Advanced Higher WDD</h1>
             <nav>
                 <ul>
-                    <li><a href="/1-Media-Queries/media-queries.html">Media Queries</a></li>
-                    <li><a href="/2-HTML-Tables/html-tables.html">Tables</a></li>
-                    <li><a href="/3-Intro-to-PHP/intro-to-php.php">PHP</a></li>
-                    <li><a href="/4-HTML-Forms/html-forms.php">Forms</a></li>
-                    <li><a href="/5-Connecting-a-Database/connecting-to-a-database.php">
+                    <li><a href="../1-Media-Queries/media-queries.html">Media Queries</a></li>
+                    <li><a href="../2-HTML-Tables/html-tables.html">Tables</a></li>
+                    <li><a href="../3-Intro-to-PHP/intro-to-php.php">PHP</a></li>
+                    <li><a href="../4-HTML-Forms/html-forms.php">Forms</a></li>
+                    <li><a href="../5-Connecting-a-Database/connecting-to-a-database.php">
                             Databases</a>
                     </li>
-                    <li><a href="/6-Session-Variables/session-variables.php">Session Variables</a></li>
-                    <li><a href="/7-Example-Project/example-project.php">Example Project</a></li>
+                    <li><a href="../6-Session-Variables/session-variables.php">Session Variables</a></li>
+                    <li><a href="../7-Example-Project/example-project.php">Example Project</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,14 +48,17 @@
         <!-- NOTES -->
         <div class="tile">
             <h2> &#9999;&#65039; Notes</h2>
-            <p>New concepts and skills will be introduced by the &#9999;&#65039; emoji. Read these carefully before
+            <p>New concepts and skills will be introduced by the &#9999;&#65039; emoji. Read these sections carefully
+                before
                 going on to look at code examples or attempting tasks. There will often be extra resources linked, as
                 below, for you to expand your understanding. </p>
+
             <hr>
             <div class="tile-links">
-                <a href="https://www.w3schools.com/css/css3_flexbox.asp">H3 Schools</a>
-                <a href="https://www.w3schools.com/css/css3_flexbox.asp">BBC Bitesize</a>
-                <a href="https://www.w3schools.com/css/css3_flexbox.asp">Khan Academy</a>
+                <a href="https://www.w3schools.com/" target="_blank">H3 Schools</a>
+                <a href="https://www.codecademy.com/learn" target="_blank">Code Academy</a>
+                <a href="https://www.youtube.com/watch?v=m52ljs78S24&list=PL0eyrZgxdwhwwQQZA79OzYwl5ewA7HQih&ab_channel=DaniKrossing"
+                    target="_blank">YouTube</a>
             </div>
         </div>
 
@@ -69,17 +77,21 @@
             <!-- these are unicode symbols. You can spot the ones I'm using as comments right at the top of this file. -->
             <!-- they're not enough to justify an "Extra Stuff" section (see below), but still fun -->
             <!-- btw, my favourite bass player is Evan Brewer -->
-            <p>When you see the &#x1F440; emoji, it means you should go into the code for this page and take a look.</p>
+            <!-- Check him out: https://www.youtube.com/watch?v=tT7e1LIYFeY&ab_channel=evanbrewerbass -->
+            <p>When you see the &#x1F440; emoji, it means you should go into the code for this page and take a look.
+                Scroll through the HTML until you see the <span class="comment">&lt;!-- CODE EXAMPLES --&gt;</span>
+                comment, and read that tile carefully.</p>
             <p>These sections of code will have plenty of internal commentary to explain what is going on.</p>
-            <!-- should i explain paragraphs...? -->
-            <p>Pay close attention, becuase you will be writing similar code yourself very soon..</p>
+            <!-- should i bother explaining paragraphs...? -->
+            <p>Pay close attention, because you will be writing similar code very soon..</p>
         </div>
 
         <!-- TASK 1 -->
         <div class="tile">
             <h2> &#10067; Your Tasks</h2>
             <p>The &#10067; emoji means it's time to practice! You will usually be asked to go into the code for this
-                page and add or change things.</p>
+                page and add or change things. In this case, look for the <span class="comment">&lt;!-- TASK 1
+                    --&gt;</span> comment.</p>
             <p>Your first task is to add a h2 in the space below. The content of the h2 should be the name of Mr
                 Williamson's favourite bass player &#x1F3B8;
             </p>
@@ -95,29 +107,41 @@
         <!-- EXTRA STUFF -->
         <div class="tile">
             <h2> &#10024; Extra Stuff</h2>
-            <p>There are four marks avaliable in your project for researching coding techniques that are not taught in
+            <p>There are four marks avaliable in your project for researching coding techniques that are <b>not
+                    taught</b> in
                 the Advanced Higher course. You can include anything you want, so use your imagination! </p>
-            <p>whenever a useful and new technique is used in this website, it will be discussed in an Extra
+            <p>Whenever a useful and new technique is used in this website, it will be discussed in an Extra
                 Stuff section. For example..</p>
         </div>
 
         <!-- SCSS -->
         <div class="tile">
-            <h2>&#10024;Syntactically Awesome Style Sheets (SASS)</h2>
-            <p>SASS is a CSS pre-processor that makes writing styles much more natural for programmers.</p>
-            <p> It adds many features, like calculations, variables, and nested structures, and allows you to split up
+            <h2>&#10024;Sassy Stylesheets (SCSS)</h2>
+            <p><a href="https://sass-lang.com/" target="_blank">SCSS</a> is a CSS pre-processor that makes writing
+                stylesheets much more
+                natural for
+                programmers.</p>
+            <p> It adds many features to "vanilla" CSS, like calculations, variables, and nested structures, and allows
+                you to split up
                 your files in
                 a more digestable way.</p>
-            <p>When you read through the code for this page, you will notice that there are a number of .SCSS files, and
-                only one .CSS file. I wrote all of the code in SCSS, and used a compiler to translate the code into a
-                regular style sheet for distribution.
+            <div class="image-container">
+                <img src="scss-example.webp" alt="" width="300px">
+                <p>Image from <a
+                        href="https://kasun-r-weerasinghe.medium.com/sass-vs-css-exploring-the-benefits-and-differences-ca98ea60f946"
+                        target="_blank">Kasun
+                        Weerasinge's article on Medium</a>
+                </p>
+            </div>
+            <p>When you read through the code for this page, you will notice that there are a number of SCSS files, and
+                only one CSS file. I wrote all of the code in SCSS, and used a compiler to translate the code into a
+                regular stylesheet for distribution.
             </p>
-            <p>You can learn more about SCSS and SASS using the links below.</p>
+            <p>You can learn more about SCSS using the links below.</p>
             <hr>
             <div class="tile-links">
-                <a href="https://www.w3schools.com/css/css3_flexbox.asp">H3 Schools</a>
-                <a href="https://www.w3schools.com/css/css3_flexbox.asp">BBC Bitesize</a>
-                <a href="https://www.w3schools.com/css/css3_flexbox.asp">Khan Academy</a>
+                <a href="https://www.w3schools.com/sass/sass_intro.asp" target="_blank">H3 Schools</a>
+                <a href="https://sass-lang.com/" target="_blank">Documentation</a>
             </div>
         </div>
     </main>
@@ -125,26 +149,26 @@
     <footer>
         <div class="row">
             <div class="image-container">
-                <img src="logo.png" alt="">
+                <img src="../0-Introduction/logo.png" alt="">
             </div>
             <nav>
                 <ul>
-                    <li><a href="/1-Media-Queries/media-queries.html">1 - Media Queries</a></li>
-                    <li><a href="/2-HTML-Tables/html-tables.html">2 - HTML Tables</a></li>
-                    <li><a href="/3-Intro-to-PHP/intro-to-php.php">3 - Intro To PHP</a></li>
-                    <li><a href="/4-HTML-Forms/html-forms.php">4 - HTML Forms</a></li>
-                    <li><a href="/5-Connecting-a-Database/connecting-to-a-database.php">5 - Connecting To A
+                    <li><a href="../1-Media-Queries/media-queries.html">1 - Media Queries</a></li>
+                    <li><a href="../2-HTML-Tables/html-tables.html">2 - HTML Tables</a></li>
+                    <li><a href="../3-Intro-to-PHP/intro-to-php.php">3 - Intro To PHP</a></li>
+                    <li><a href="../4-HTML-Forms/html-forms.php">4 - HTML Forms</a></li>
+                    <li><a href="../5-Connecting-a-Database/connecting-to-a-database.php">5 - Connecting To A
                             Database</a>
                     </li>
-                    <li><a href="/6-Session-Variables/session-variables.php">6 - Session Variables</a></li>
-                    <li><a href="/7-Example-Project/example-project.php">7 - Example Project</a></li>
+                    <li><a href="../6-Session-Variables/session-variables.php">6 - Session Variables</a></li>
+                    <li><a href="../7-Example-Project/example-project.php">7 - Example Project</a></li>
                 </ul>
             </nav>
         </div>
 
         <div class="author-details">
             <h2>Mr W's Advanced WDD Demos</h2>
-            <a href=""> &#10071; A note for teachers &#10071;</a>
+            <a class="no-print" href=""> &#10071; A note for teachers &#10071;</a>
             <p>Made with &#10084;&#65039; by Mr Williamson, for <a href="https://linlithgowacademy.westlothian.org.uk/"
                     target="_blank">Linlithgow Academy</a></p>
             <p>Contect the author: <a href="mailto:wlfinlay.williamson@glow.sch.uk">wlfinlay.williamson@glow.sch.uk</a>

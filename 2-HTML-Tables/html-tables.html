@@ -12,45 +12,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../0-Introduction/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../0-Introduction/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="../0-Introduction/favicon_io/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="../0-Introduction/favicon_io/apple-touch-icon.png">
     <link rel="stylesheet" href="/0-Introduction/style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table-style.css">
+    <link rel="stylesheet" href="my-tables.css">
     <title>&#10024;Mr W's AH WDD&#10024;</title>
 </head>
 
 <body>
+
     <header>
-        <div class="image-container">
-            <img src="/0-Introduction/logo.png" alt="">
+        <div class="image-container no-print">
+            <img src="../0-Introduction/logo.png" alt="">
         </div>
         <div class="main-nav">
-            <h1 class="main-heading">Mr W's Advanced WDD Demos</h1>
+            <h1 class="main-heading">Advanced Higher WDD</h1>
             <nav>
                 <ul>
-                    <li><a href="/1-Media-Queries/media-queries.html">Media Queries</a></li>
-                    <li><a href="/2-HTML-Tables/html-tables.html">Tables</a></li>
-                    <li><a href="/3-Intro-to-PHP/intro-to-php.php">PHP</a></li>
-                    <li><a href="/4-HTML-Forms/html-forms.php">Forms</a></li>
-                    <li><a href="/5-Connecting-a-Database/connecting-to-a-database.php">
+                    <li><a href="../1-Media-Queries/media-queries.html">Media Queries</a></li>
+                    <li><a href="../2-HTML-Tables/html-tables.html" class="current-page">Tables</a></li>
+                    <li><a href="../3-Intro-to-PHP/intro-to-php.php">PHP</a></li>
+                    <li><a href="../4-HTML-Forms/html-forms.php">Forms</a></li>
+                    <li><a href="../5-Connecting-a-Database/connecting-to-a-database.php">
                             Databases</a>
                     </li>
-                    <li><a href="/6-Session-Variables/session-variables.php">Session Variables</a></li>
-                    <li><a href="/7-Example-Project/example-project.php">Example Project</a></li>
+                    <li><a href="../6-Session-Variables/session-variables.php">Session Variables</a></li>
+                    <li><a href="../7-Example-Project/example-project.php">Example Project</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
     <main>
+        <!-- NOTES -->
         <div class="tile">
-            <h2>Tables in HTML</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus inventore porro reiciendis eum
-                deleniti recusandae qui nobis expedita amet animi.</p>
-            <a href="https://www.w3schools.com/css/css3_flexbox.asp">Learn More</a>
+            <h2>&#9999;&#65039; Tables in HTML</h2>
+            <p>Tables use a specific set of HTML elements to display data in a digestable way.</p>
+            <p> Later, we will be using
+                tables to format data that we have retrieved from a database using PHP, but for now... just tables.</p>
+            <hr>
+            <div class="tile-links">
+                <a href="https://www.w3schools.com/html/html_tables.asp" target="_blank">W3 Schools</a>
+                <a href="https://www.youtube.com/watch?v=dK27jWKtJxs&ab_channel=DaniKrossing"
+                    target="_blank">YouTube</a>
+
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables" targe="_blank">MDN Web Docs</a>
+            </div>
         </div>
+
+        <!-- CODE EXAMPLE ONE -->
         <div class="tile">
-            <!-- NO CSS TABLE EXAMPLE -->
-            <h2>Unstyled Table Example</h2>
-            <p>The table has below no CSS to style it whatsoever.</p>
+            <h2>&#x1F440; Unstyled Table Example</h2>
+            <p>The comments in the code for the following sections explain in more detail how to create tables.</p>
+            <p>Remember to look for the <span class="comment">&lt;!-- CODE EXAMPLES --&gt;</span> comment.</p>
+            <p>The table below has no CSS to style it whatsoever.</p>
+            <!-- make sure you remember the <table> wrapper -->
             <table>
                 <!-- tr stands for "Table Row" -->
                 <!-- The first row of our table is used for headings, or "Table Headings" -->
@@ -78,9 +96,12 @@
             </table>
         </div>
 
+        <!-- CODE EXAMPLE TWO -->
         <div class="tile">
-            <h2>Styled Table Example</h2>
+            <h2>&#x1F440; Styled Table Example</h2>
             <p>Here we have given the table a class, and used descendant selectors in CSS to stlye the table.</p>
+            <!-- look at the "table-style.css" file to see how we have styled it -->
+            <!-- notice that by efficient use of CSS we don't have to clog up our HTML with unnecesary class names. The HTML in this example is almost identical to the one above. -->
             <table class="styled-table">
                 <tr>
                     <th>Forename</th>
@@ -105,12 +126,18 @@
             </table>
         </div>
 
+        <!-- CODE EXAMPLE 3 -->
         <div class="tile">
-            <h2>Table Wrappers Example</h2>
-            <p>Here we have given the table a class, and used descendant selectors in CSS to stlye the table.</p>
+            <h2>&#x1F440; Table Wrappers Example</h2>
+            <p>We can change the format of the table by using table wrappers: thead, tbody and tfoot.</p>
+            <p>This is useful for when we want to have "cells" span more than one column in the table. Notice that Name
+                and Details span two columns, whereas Average Lucky Number spans three columns.</p>
             <table class="styled-table">
+                <!-- the top row of "main headings" goes inside of a thead element -->
                 <thead>
+                    <!-- we can split the thead into multiple rows, to show that we have more than one set of headings -->
                     <tr class="main-headings">
+                        <!-- we use the colspan attribute to force the item to take up two columns -->
                         <th colspan=2>Name</th>
                         <th colspan=2>Details</th>
                     </tr>
@@ -121,6 +148,7 @@
                         <th>Lucky Number</th>
                     </tr>
                 </thead>
+                <!-- tbody is where the main data goes. It is pretty much the same as before -->
                 <tbody>
                     <tr>
                         <td>Mrs</td>
@@ -143,76 +171,137 @@
                 </tbody>
                 <tfoot>
                     <tr>
+                        <!-- we use the colspan attribute to force the item to take up three columns -->
                         <td colspan="3">Average Lucky Nymber</td>
+                        <!-- we don't need a colspan = "1" below, becuase there is only one column left -->
                         <td>maths is hard</td>
                     </tr>
                 </tfoot>
-
             </table>
+            <p>When reading through the code for this section, pay special attention to the use of clases when styling
+                the table.</p>
         </div>
 
+        <!-- TASK ONE-->
         <div class="tile">
-            <h2>Learn more about display:flex</h2>
-            <p>
-                The header uses display:flex to dynamically position content. It does a similar thing to float:left and
-                float:right, but is far easier and less archaic. This is the kind of thing you can get extra marks for
-                in your project...
-            </p>
-            <a href="https://www.w3schools.com/css/css3_flexbox.asp">Learn more</a>
-            <br>
-            <h3>What do you mean, extra marks!?!?!</h3>
-            <p>In your project, 4 marks are available for implementing code that is not in the AH course. This will
-                require your own research to decide what is most appropriate. Flexbox or CSS Grids are a good jumping
-                off point</p>
+            <h2>&#10067; Task One</h2>
+            <p>Using the "table-style.css" file, change the font of the styled tables in the example above to Impact</p>
+            <!-- think - which element(s) will you have to select? -->
         </div>
-        <section>
-            <h2>Your Tasks</h2>
-            <div class="tile">
-                <h3>Exercise 1</h3>
-                <p>In the space provided below, use HTML and CSS to re-create the table seen in this screenshot:</p>
-                <img src="ex1table.png" alt="oops, image not found :(">
-                <div class="student-answers">
-                    <h4>Your code goes here...</h4>
-                    <!-- START YOUR HERE -->
-                    <!-- END OF YOUR CODE HERE -->
-                </div>
+
+        <!-- TASK TWO -->
+        <div class="tile">
+            <h2>&#10067; Task Two</h2>
+            <p>Using HTML only, insert the data seen in the screen shot below into a table. Use the space below for your
+                code.</p>
+            <div class="image-container">
+                <img src="table-data-no-style.png" width="400px" alt="">
+                <p>Data taken from <a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a>
+                </p>
             </div>
-            <div class="tile">
-                <h3>Exercise 2</h3>
-                <p>In the space provided below, use HTML and CSS to re-create the table seen in this screenshot:</p>
-                <img src="ex1table.png" alt="oops, image not found :(">
-                <div class="student-answers">
-                    <h4 class="code-prompt">Your code goes here...</h4>
-                    <!-- START YOUR HERE -->
-                    <!-- END OF YOUR CODE HERE -->
-                </div>
+            <h3>Your Code Here</h3>
+            <!-- START YOUR CODE HERE -->
+
+            <!-- YOUR CODE ENDS HERE -->
+        </div>
+
+        <!-- TASK 3 -->
+        <div class="tile">
+            <h2>&#10067; Task Three</h2>
+            <p>Using the "my-tables.css" file, match the style to the following screenshot as closely as you can:</p>
+            <!-- think - which element(s) will you have to select? -->
+
+            <div class="image-container">
+                <img src="table-data-styled.png" width="500px" alt="">
+                <p>What, don't you believe me? <a
+                        href="https://haggiswildlifefoundation.com/what-is-wild-haggis/#:~:text=Scientifically%20known%20as%20Haggis%20scoticus,is%20a%20separate%20species%20altogether."
+                        target="_blank">PROOF</a>
+                </p>
             </div>
-        </section>
+            <p>It might be tempting to copy and paste my example code to start with... but I encourage you to figure
+                this out for yourself. <b>You'll learn more.</b></p>
+            <h3>Your Code Here</h3>
+            <!-- START YOUR CODE HERE -->
+
+            <!-- YOUR CODE ENDS HERE -->
+        </div>
+
+        <!-- TASK 4 -->
+        <div class="tile">
+            <h2>&#10067; Task Four</h2>
+            <p>In the space below, recreate this table as closely as possible:</p>
+            <div class="image-container">
+                <img src="final-boss.png" width="500px" alt="">
+                <p>This one is not as <a
+                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">fun.</a>
+                </p>
+            </div>
+            <p><i>hint: make a new class for this table and start from scratch</i></p>
+            <h3>Your Code Here</h3>
+            <!-- START YOUR CODE HERE -->
+
+            <!-- YOUR CODE ENDS HERE -->
+        </div>
+
+        <!-- IMPORTANT -->
+        <div class="tile">
+            <h2>&#10071; Just for Data &#10071;</h2>
+            <p>Tables should <b>only</b> be used for displaying data.</p>
+            <p>Once you get the hang of them you might be tempted to use them to format a navigation bar, or a footer.
+            </p>
+            <h3>Don't.</h3>
+            <p>Modern browsers have many accessibillity features built in. Blind people can access websites by using an
+                eReader. This is why <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">semantic
+                    HTML</a> is important - properly structured HTML makes your
+                website easier to read with modern tools. Don't be lazy!</p>
+            <div class="image-container">
+                <img src="semantic-elements.png" alt="" width=200px>
+                <p>Read more at <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">W3 Schools</a></p>
+            </div>
+            <!-- EXTRA STUFF -->
+            <h2>&#10024; CSS Grid</h2>
+            <p>If you're interested in using more ambitious layouts like the one above, you can investigate CSS Flexbox
+                or CSS Grid.</p>
+            <p>These are likely to gain you extra marks in the project.</p>
+            <hr>
+            <div class="tile-links">
+                <h3>Flex</h3>
+                <a href="https://www.youtube.com/watch?v=phWxA89Dy94&ab_channel=SlayingTheDragon">YouTube</a>
+                <a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">W3 Schools</a>
+            </div>
+
+            <div class="tile-links">
+                <h3>Grid</h3>
+                <a href="https://www.youtube.com/watch?v=EiNiSFIPIQE&ab_channel=SlayingTheDragon"
+                    target="_blank">YouTube</a>
+                <a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">W3 Schools</a>
+            </div>
+        </div>
     </main>
 
     <footer>
         <div class="row">
             <div class="image-container">
-                <img src="/0-Introduction/logo.png" alt="">
+                <img src="../0-Introduction/logo.png" alt="">
             </div>
             <nav>
                 <ul>
-                    <li><a href="/1-Media-Queries/media-queries.html">1 - Media Queries</a></li>
-                    <li><a href="/2-HTML-Tables/html-tables.html">2 - HTML Tables</a></li>
-                    <li><a href="/3-Intro-to-PHP/intro-to-php.php">3 - Intro To PHP</a></li>
-                    <li><a href="/4-HTML-Forms/html-forms.php">4 - HTML Forms</a></li>
-                    <li><a href="/5-Connecting-a-Database/connecting-to-a-database.php">5 - Connecting To A
+                    <li><a href="../1-Media-Queries/media-queries.html">1 - Media Queries</a></li>
+                    <li><a href="../2-HTML-Tables/html-tables.html">2 - HTML Tables</a></li>
+                    <li><a href="../3-Intro-to-PHP/intro-to-php.php">3 - Intro To PHP</a></li>
+                    <li><a href="../4-HTML-Forms/html-forms.php">4 - HTML Forms</a></li>
+                    <li><a href="../5-Connecting-a-Database/connecting-to-a-database.php">5 - Connecting To A
                             Database</a>
                     </li>
-                    <li><a href="/6-Session-Variables/session-variables.php">6 - Session Variables</a></li>
-                    <li><a href="/7-Example-Project/example-project.php">7 - Example Project</a></li>
+                    <li><a href="../6-Session-Variables/session-variables.php">6 - Session Variables</a></li>
+                    <li><a href="../7-Example-Project/example-project.php">7 - Example Project</a></li>
                 </ul>
             </nav>
         </div>
 
         <div class="author-details">
             <h2>Mr W's Advanced WDD Demos</h2>
-            <a href=""> &#10071; A note for teachers &#10071;</a>
+            <a class="no-print" href=""> &#10071; A note for teachers &#10071;</a>
             <p>Made with &#10084;&#65039; by Mr Williamson, for <a href="https://linlithgowacademy.westlothian.org.uk/"
                     target="_blank">Linlithgow Academy</a></p>
             <p>Contect the author: <a href="mailto:wlfinlay.williamson@glow.sch.uk">wlfinlay.williamson@glow.sch.uk</a>
@@ -220,9 +309,8 @@
         </div>
 
     </footer>
-
     <!-- navigation scripting -->
-    <script src="/0-Introduction/script.js"></script>
+    <script src="../0-Introduction/script.js"></script>
 </body>
 
 </html>
