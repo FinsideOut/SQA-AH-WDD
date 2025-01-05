@@ -1,0 +1,50 @@
+ul li p,
+ol li p {
+    margin-bottom: 5px !important;
+}
+
+ul,
+ol {
+    padding-left: 40px !important;
+    margin-bottom: 20px;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form select,
+form textarea,
+form button,
+form fieldset {
+    margin-bottom: 10px;
+    resize: none;
+}
+
+form label,
+form legend,
+form input,
+form textarea,
+form select {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+form fieldset {
+    padding: 10px;
+}
+
+form fieldset {
+    padding: 10px;
+}
+
+form fieldset legend {
+    padding: 0 10px;
+}
