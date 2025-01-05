@@ -1,0 +1,22 @@
+.scrollable {
+    max-height: 200px;
+    width: 100%;
+    overflow-y: scroll;
+    text-align: center;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.scrollable p {
+    margin-bottom: 0px;
+}
+
+/* !important  */
+/* adding this to the end of a line prevents the cascading behaviour of CSS */
+/* it means that no matter what code is written below this line, it cannot be overwritten */
+/* Avoid using this as much as possible */
+.data-bold {
+    background-color: aqua !important;
+    color: navy !important;
+}
