@@ -4,7 +4,7 @@
     <div class="row">
         <div class="image-container">
             <img src="../0-Introduction/img/logo.png" alt="">
-            <img src="../../0-Introduction/img/logo.png" alt="">
+
 
         </div>
         <nav>
@@ -36,7 +36,10 @@
 
 <!-- navigation scripting -->
 <script src="../0-Introduction/script.js"></script>
-<script src="../../0-Introduction/script.js"></script>
+
+<!-- Display Instruction -->
+<script src="script.js"></script>
+
 
 </body>
 

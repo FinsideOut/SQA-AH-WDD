@@ -1,0 +1,318 @@
+body {
+  font-family: "Pokemon Solid", sans-serif;
+  background-color: #f8f9fa;
+  color: #2a2a2a;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #ffcb05;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+header h1 {
+  font-size: 2.5rem;
+  color: #cc0000;
+  text-shadow: 2px 2px #3b4cca;
+}
+
+nav {
+  margin-top: 16px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 16px;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #3b4cca;
+  color: white;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+  background-color: #cc0000;
+}
+nav ul li.right {
+  margin-left: auto;
+}
+
+.user-details {
+  background-color: #3b4cca;
+  color: white;
+  padding: 16px;
+  margin: 16px auto;
+  max-width: 600px;
+  border-radius: 12px;
+  text-align: left;
+}
+.user-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+.user-details p {
+  margin: 8px 0;
+}
+
+footer {
+  background-color: #3b4cca;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  margin-top: 24px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+footer h3 {
+  font-family: "Pokemon Solid", sans-serif;
+  font-size: 1.5rem;
+  color: #ffcb05;
+  text-shadow: 2px 2px #cc0000;
+  margin-bottom: 8px;
+}
+footer a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #ffcb05;
+  background-color: #cc0000;
+  padding: 8px 16px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+footer a:hover {
+  background-color: #ffcb05;
+  color: #cc0000;
+}
+
+main {
+  flex-grow: 1;
+  padding: 24px;
+  width: 80%;
+  margin: 24px auto;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+main h1 {
+  font-size: 2rem;
+  color: #ffcb05;
+  margin-bottom: 16px;
+}
+main p {
+  font-size: 1rem;
+  color: #2a2a2a;
+  margin-bottom: 8px;
+}
+main form.account {
+  background-color: #3b4cca;
+  color: white;
+  padding: 16px;
+  margin: 24px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  width: 50%;
+}
+main form.account label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+main form.account input[type=text],
+main form.account input[type=password],
+main form.account input[type=email] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ffcb05;
+  border-radius: 12px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+main form.account input[type=submit] {
+  background-color: #cc0000;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+main form.account input[type=submit]:hover {
+  background-color: #ffcb05;
+  color: #cc0000;
+}
+main h3 {
+  font-size: 1.25rem;
+  color: #2a2a2a;
+  margin-top: 24px;
+}
+main a {
+  text-decoration: none;
+  color: #cc0000;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+main a:hover {
+  color: #ffcb05;
+}
+
+main.scores {
+  padding: 24px;
+  width: 90%;
+  margin: 24px auto;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+main.scores table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  overflow-y: scroll;
+}
+main.scores table th,
+main.scores table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #3b4cca;
+}
+main.scores table th {
+  background-color: #3b4cca;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+main.scores table tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+main.scores table tr:hover {
+  background-color: #ffcb05;
+  color: white;
+}
+main.scores table td {
+  font-size: 1rem;
+}
+main.scores h1 {
+  font-size: 2rem;
+  color: #ffcb05;
+  margin-bottom: 16px;
+}
+main.scores h3 {
+  font-size: 1.25rem;
+  color: #2a2a2a;
+  margin-top: 24px;
+}
+main.scores a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #cc0000;
+  border: 2px solid #cc0000;
+  padding: 8px;
+  border-radius: 12px;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+main.scores a:hover {
+  background-color: #cc0000;
+  color: white;
+}
+
+.gameArea {
+  background-color: #3b4cca;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+}
+.gameArea .imageContainer {
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.gameArea .imageContainer .guess-bg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.gameArea .imageContainer .pokemonImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+.gameArea .imageContainer .silhouette {
+  filter: grayscale(100%) brightness(0%);
+}
+.gameArea input[type=text] {
+  width: 80%;
+  padding: 8px;
+  font-size: 1.1rem;
+  border: 2px solid #ffcb05;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.gameArea input[type=text]:focus {
+  outline: none;
+  border-color: #cc0000;
+}
+.gameArea input[type=submit] {
+  background-color: #cc0000;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.gameArea input[type=submit]:hover {
+  background-color: #ffcb05;
+  color: #cc0000;
+}
+.gameArea h3 {
+  font-size: 1.5rem;
+  color: #2a2a2a;
+  margin-top: 24px;
+}
+.gameArea a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #cc0000;
+  border: 2px solid #cc0000;
+  padding: 8px;
+  border-radius: 12px;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.gameArea a:hover {
+  background-color: #cc0000;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

@@ -4,7 +4,7 @@
     <div class="row">
         <div class="image-container">
             <img src="../0-Introduction/img/logo.png" alt="">
-            <img src="../../0-Introduction/img/logo.png" alt="">
+
 
         </div>
         <nav>
@@ -13,11 +13,12 @@
                 <li><a href="../2-HTML-Tables/html-tables.html">2 - HTML Tables</a></li>
                 <li><a href="../3-Intro-to-PHP/intro-to-php.php">3 - Intro To PHP</a></li>
                 <li><a href="../4-HTML-Forms/html-forms.php">4 - HTML Forms</a></li>
-                <li><a href="../5-Connecting-a-Database/connecting-to-a-database.php" class="current-page">5 -
+                <li><a href="../5-Connecting-a-Database/connecting-to-a-database.php">5 -
                         Connecting To A
                         Database</a>
                 </li>
-                <li><a href="../6-Session-Variables/session-variables.php">6 - Session Variables</a></li>
+                <li><a href="../6-Session-Variables/session-variables.php" class="current-page">6 - Session
+                        Variables</a></li>
                 <li><a href="../7-Example-Project/example-project.php">7 - Example Project</a></li>
             </ul>
         </nav>
@@ -36,7 +37,10 @@
 
 <!-- navigation scripting -->
 <script src="../0-Introduction/script.js"></script>
-<script src="../../0-Introduction/script.js"></script>
+
+<!-- Display Instruction -->
+<script src="script.js"></script>
+
 
 </body>
 
